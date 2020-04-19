@@ -18,6 +18,7 @@ AddEventHandler("player:getItems", function(target)
     end
     local check = false
     TriggerEvent('redemrp:getPlayerFromId', _source, function(user)
+        print(user)
         local identifier = user.getIdentifier()
         local charid = user.getSessionVar("charid")
         --print(identifier)
